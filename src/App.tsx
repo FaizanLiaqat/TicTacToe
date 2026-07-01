@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import React, { useState } from 'react';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import Icons from './components/Icons';
 
 const size = Dimensions.get('window').width / 3;
 
@@ -177,7 +178,7 @@ export default function App() {
             return (
               <Pressable key={i} onPress={() => turnPlayed(i)}>
                 <View style={styles.cell}>
-                  <Text>{c}</Text>
+                  <Icons name={c} />
                 </View>
               </Pressable>
             );
