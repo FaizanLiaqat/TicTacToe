@@ -1,133 +1,100 @@
-# Tic Tac Toe - React Native
+# Tic Tac Toe 🎮
 
-A simple Tic Tac Toe game built with **React Native** and **TypeScript**.
+A classic Tic Tac Toe game built with **React Native** and **TypeScript**.
 
-This project was developed from scratch as a learning exercise to better understand React Native fundamentals, component-based architecture, state management, event handling, and game logic without relying on guided tutorials.
-
----
+This project was built from scratch as a personal learning exercise without following a step-by-step tutorial. The focus was on understanding React Native fundamentals, state management, component design, and implementing the game logic independently.
 
 ## Features
 
-* Classic 3×3 Tic Tac Toe gameplay
-* Two-player mode (X vs O)
-* Turn-based gameplay
-* Winner detection
+- 🎲 Two-player gameplay (X vs O)
+- 🔄 Alternating player turns
+- ✅ Win detection for:
 
-  * Horizontal wins
-  * Vertical wins
-  * Diagonal wins
-* Prevents overwriting occupied cells
-* Restart game functionality
-* Responsive square game board
+  - Horizontal lines
+  - Vertical lines
+  - Diagonal lines
 
----
+- 🚫 Prevents selecting an occupied cell
+- 🔁 Restart game functionality
+- 📱 Responsive 3×3 game board
+- 🎨 FontAwesome icons for X and O
 
-## Technologies Used
+## Tech Stack
 
-* React Native
-* TypeScript
-* React Hooks (`useState`)
-* React Native Safe Area Context
-
----
-
-## Learning Objectives
-
-The primary goal of this project was to strengthen my understanding of:
-
-* React Native fundamentals
-* Functional components
-* State management using React Hooks
-* Rendering lists using `.map()`
-* Event handling with `Pressable`
-* Immutable state updates
-* Building and debugging application logic
-* Designing game algorithms without following tutorial implementations
-
----
+- React Native
+- TypeScript
+- React Hooks (`useState`)
+- React Native Safe Area Context
+- React Native Vector Icons (FontAwesome)
 
 ## Project Structure
 
 ```text
 .
+├── components
+│   └── Icons.tsx
 ├── App.tsx
-├── components/
-│   └── ...
 ├── android/
 ├── ios/
 └── ...
 ```
 
----
+## What I Learned
+
+While building this project, I gained hands-on experience with:
+
+- Building UI using React Native components
+- Managing application state with React Hooks
+- Updating state immutably
+- Rendering dynamic lists using `.map()`
+- Handling user interactions with `Pressable`
+- Creating reusable components
+- Designing and implementing game logic
+- Debugging React Native applications using Logcat
+- Working with third-party libraries and TypeScript
 
 ## Getting Started
 
-### Clone the repository
+Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/FaizanLiaqat/TicTacToe.git
+```
+
+Navigate to the project directory:
+
+```bash
 cd TicTacToe
 ```
 
-### Install dependencies
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-### Start Metro
+Start the Metro bundler:
 
 ```bash
 npx react-native start
 ```
 
-### Run on Android
+Run the Android application:
 
 ```bash
 npx react-native run-android
 ```
 
-### Run on iOS (macOS only)
-
-```bash
-npx react-native run-ios
-```
-
----
-
-## Gameplay
-
-1. Player **O** starts first.
-2. Players take turns placing their marks.
-3. A player wins by placing three identical marks in:
-
-   * a row,
-   * a column,
-   * or a diagonal.
-4. Once a winner is detected, the game ends.
-5. Press **Restart Game** to begin a new match.
-
----
-
 ## Future Improvements
 
-* Draw detection
-* Scoreboard
-* Winning line animation
-* Sound effects
-* Single-player mode (AI)
-* Difficulty levels
-* Better UI and animations
-* Dark mode support
-
----
+- 🤝 Single-player mode with AI
+- 📊 Scoreboard
+- 🤝 Draw detection
+- ✨ Winning line animation
+- 🎵 Sound effects
+- 🌙 Dark mode
+- 💫 Improved UI and animations
 
 ## License
 
-This project is intended for learning purposes.
-
-You can further personalize it by adding:
-
-* a GIF of the gameplay,
-* screenshots,
-* or a short "Challenges I faced" section describing what you learned while implementing the winner detection logic and state management. Those additions make a portfolio project more compelling than just listing features.
+This project is available for learning and educational purposes.
